@@ -1,0 +1,42 @@
+body {
+    max-width: 1080px;
+    margin: auto;
+}
+
+.header {
+    text-align: center;
+    font-size: 4rem;
+}
+img {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+#image-container img {
+    margin: 10px;
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    border: 2px solid #ccc;
+    transition: border-color 0.3s;
+}
+
+.border {
+    border: 1px solid green !important;
+}
+
+.row {
+    position: relative;
+}
+
+.redborder {  
+    border-width: thick;
+    border-style: solid;
+    border-color: red;
+}
+
+.greenborder {
+    border-width: thick;
+    border-style: solid;
+    border-color: green;
+}
