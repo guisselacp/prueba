@@ -1,48 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="Description" content="Enter your description here" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/cosmo/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-    <link rel="stylesheet" href="./assets/style/style.css">
-
-
-    <title>Title</title>
-</head>
-
-<body>
-
-<h1>Guess the Animal by its Sound</h1>
-
-<div class = "game-container">
-    <div class = "row">
-        <div class="col-6">
-            <audio id="animalSound" controls></audio>
-        </div>
-        <div class="col-6">
-            <div class="row">
-                <div class="col-6">
-                    <div id="imageContainer"></div>
-                </div>
-            </div>    
-        </div>
-    </div>    
-</div>    
-
-<div id="message"></div>
-
+    <title>Animal Guessing Game</title>
     
+</head>
+<body>
+    <h1>Guess the Animal!</h1>
+    <p id="question">Which animal belong this group?</p>
+    <div class="images-container" id="image-container">
+        <!-- Images will be dynamically inserted here -->
+    </div>
+    <div class="message" id="message"></div>
+    <button onclick="startGame()">Start Game</button>
 
-<script src="assets/js/script.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
-
+    <script src="assets/js/script.js"></script>
 </body>
-
 </html>

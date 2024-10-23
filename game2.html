@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Guessing Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .images-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .images-container img {
+            width: 150px;
+            height: 150px;
+            cursor: pointer;
+        }
+        .message {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Guess the Animal!</h1>
+    <p id="question">Which one is a ... ?</p>
+    <div class="images-container" id="image-container">
+        <!-- Images will be dynamically inserted here -->
+    </div>
+    <div class="message" id="message"></div>
+    <button onclick="startGame()">Start Game</button>
+
+    <script src="game.js"></script>
+</body>
+</html>

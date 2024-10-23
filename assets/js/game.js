@@ -3,6 +3,7 @@ const animals = [
     { name: 'gaggle', image: 'goose' },
     { name: 'gull', image: 'colony' },
     { name: 'parrot', image: 'pandemonium' }
+  
 ];
 
 // Function to shuffle an array (Fisher-Yates algorithm)
@@ -31,7 +32,7 @@ function startGame() {
     const imageOptions = shuffle([correctAnimal, ...randomWrongAnimals]);
 
     // Update the question
-    document.getElementById('question').innerText = `Which one belongs to a ${correctAnimal.name}?`;
+    document.getElementById('question').innerText = `Which one is a ${correctAnimal.name}?`;
 
     // Display images
     imageOptions.forEach(animal => {
